@@ -1178,10 +1178,74 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
+
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
+    .about_us{
+        width: 100%;
+    }
+
+    .about_text{
+        width: 100%;
+        padding: 0 1px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about_2{
+        width: 90%;
+        padding: 0 0px;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .about_3{
+        width: 90%;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    .about_grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        gap: 20px;
+        height: 300px;
+    }
+
+    .service_1{
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .contact_grid{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    input{
+    height: 50px;
+    width: 350px;
+}
+
+.contact_p1{
+    padding: 0px 0;
+}
+
 }
 /* End of Responsive Design */
 /* End of CSS */
