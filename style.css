@@ -1184,6 +1184,16 @@ footer{
 
 /* Mobile phones */
 @media (max-width: 480px) {
+
+    .testimony{
+        font-size: 20px;
+        line-height: 30px;
+        width: auto;
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .about_us{
         width: 100%;
     }
@@ -1220,12 +1230,39 @@ footer{
         height: 300px;
     }
 
+        .about_testimonial{
+        padding-top: 20px;
+        height: auto;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
     .service_1{
         padding: 0px 10px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 10px;
+    }
+
+    .service_main{
+        height: 400px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service_1 img{
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .service1a{
+        padding: 20px 0;
+        text-align: center;
     }
 
     .contact_grid{
@@ -1241,6 +1278,27 @@ footer{
     height: 50px;
     width: 350px;
 }
+
+    .contact_info {
+        order: 2;
+        margin-top: 20px;
+        padding-left: 40px;
+        text-align: center;
+    }
+
+    .contact_p{
+        padding-right: 0px;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 18px;
+        margin-top: 20px;
+    }
+
+    .contact_p2{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
 
 .contact_p1{
     padding: 0px 0;
@@ -1342,5 +1400,6 @@ footer{
         padding-left: 40px;
         text-align: center;
     }
+}
 /* End of Responsive Design */
 /* End of CSS */
