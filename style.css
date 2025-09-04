@@ -151,6 +151,8 @@ section{
 .services{
     justify-items: center;
     align-content: center;
+    text-align: center;
+    margin: 0 auto;
 } 
 
 .text{
