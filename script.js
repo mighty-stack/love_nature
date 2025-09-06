@@ -6,7 +6,7 @@ menuToggle.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// scroll-animations.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".animate-on-scroll");
 
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const animation = el.dataset.animate || "animate__fadeInUp";
         const delay = el.dataset.delay || "0s";
 
-        // Apply Animate.css settings
+        
         el.style.setProperty("--animate-delay", delay);
         el.classList.add("animate__animated", animation, "animate__slower");
 
-        // Prevent re-animation flicker
+      
         el.classList.add("animated-once");
         observer.unobserve(el);
       }

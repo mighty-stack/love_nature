@@ -148,11 +148,12 @@ section{
     height: 700px;
 }
 
-.services{
+#services{
     justify-items: center;
     align-content: center;
     text-align: center;
     margin: 0 auto;
+    height: 120px;
 } 
 
 .text{
@@ -282,7 +283,7 @@ padding-bottom: 50px;
     padding: 10px;
     height: 50px;
     width: 160px;
-    background-color: white;
+    background-color: gray;
     color: rgba(83, 105, 65, 0.8);
     font-weight: bold;
     border: 1px solid rgba(83, 105, 65, 0.8);
