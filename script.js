@@ -30,3 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach(el => observer.observe(el));
 });
+
+
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { Accept: "application/json" }
+    })
+      .then((response) => {
+        if (response.ok) {
+          status.innerText = "Thanks! Your message has been sent.";
+          form.reset();
+        } else {
+          status.innerText = "Oops! Something went wrong.";
+        }
+      })
+      .catch(() => {
+        status.innerText = " Network error. Please try again.";
+      });
+  });

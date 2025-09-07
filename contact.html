@@ -47,12 +47,13 @@
 
     <div class="contact_form animate-on-scroll" data-animate="animate__fadeInRight">
       <h4 class="contact_p1">Let's get in touch</h4>
-      <form action="https://formspree.io/f/xldlkjjo" method="post">
+      <form id="contact_form" action="https://formspree.io/f/xldlkjjo" method="POST">
         <input type="text" placeholder="Your name" required name="name"> <br>
         <input type="email" placeholder="Your email" required name="email"> <br>
-        <input type="text" placeholder="Message" required name="text"> <br>
-        <button class="form_button">Send Message</button>
+        <input type="text" placeholder="Message" required name="Message"> <br>
+        <button class="form_button" type="submit">Send Message</button>
       </form>
+       <p id="form-status" style="margin-top:10px;"></p>
     </div>
   </section>
 
